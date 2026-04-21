@@ -1,0 +1,110 @@
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #f5f1e8;
+  color: #03030f;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  color: white;
+  background: black;
+  text-align: center;
+  padding: 60px;
+  font-size: 48px;
+}
+
+.intro {
+  color: red;
+  background-color: #efe7d3;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.menu {
+  padding: 15px 0;
+  background-color: #2c2c2c;
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 10px 15px;
+}
+
+.menu a {
+  color: #ffffff;
+  padding: 10px 18px;
+}
+
+.menu a:hover {
+  background-color: #4a4a4a;
+}
+
+table {
+  margin: 30px auto; 
+  /* 30px felső és alsó margó, auto bal/jobb → vízszintesen középre igazítja a táblát */
+
+  border-collapse: collapse;      
+  /* A cellák közötti dupla keretek összeolvadnak → szebb, egységes táblázat */
+
+  width: 80%;                     
+  /* A táblázat szélessége a szülő elem 80%-a */
+
+  max-width: 700px;
+  /* Maximum 700px széles lehet → nagy képernyőn sem nyúlik túl szélesre */
+
+  background-color: #fff;
+  /* Fehér háttérszín a táblázatnak */
+
+  border-radius: 10px;
+  /* Lekerekített sarkok */
+
+  overflow: hidden;
+  /* A lekerekített sarkokon kívül eső tartalom levágása (pl. háttérszínek ne lógjanak ki) */
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  /* Árnyék: vízszintes eltolás 0, függőleges 4px, elmosás 10px, halvány fekete */
+}
+
+th {
+  background-color: #2c2c2c;
+  /* A fejléc (header) sötétszürke háttér */
+
+  color: white;
+  /* Fehér szöveg a jobb kontrasztért */
+
+  padding: 12px;
+  /* Belső térköz → a szöveg ne tapadjon a cella széléhez */
+}
+
+td {
+  padding: 12px;
+  /* Belső térköz minden adatcellában */
+
+  text-align: center;
+  /* Szöveg középre igazítása vízszintesen */
+}
+
+/* váltakozó sorok */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  /* Minden páros sor világosszürke → zebra minta */
+}
+
+/* hover effekt */
+tr:hover {
+  background-color: #e0d2a8;
+  /* Ha az egér egy sor fölé kerül → háttérszín kiemelés */
+}
